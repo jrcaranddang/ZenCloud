@@ -1,0 +1,12 @@
+# Editor/IDE generated files
+*.iml
+.*.swp
+.swp
+.DS_Store
+.idea/
+
+# Node generated artifacts
+node_modules/
+npm-debug.log
+npm-shrinkwrap.json
+dist/
