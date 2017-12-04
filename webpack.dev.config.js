@@ -30,6 +30,10 @@ const config = {
             presets: ['react']
           }
         }
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   },

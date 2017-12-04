@@ -1,0 +1,24 @@
+{
+    "filters": [
+        {
+            "name": "Teachers",
+            "options": ["Thich Nhat Hanh", "Teacher A", "Teacher B"]
+        },
+        {
+            "name": "Languages",
+            "options": ["English", "French", "German"]
+        },
+        {
+            "name": "Locations",
+            "options": ["Plum Village", "Deer Park", "Blue Cliff"]
+        },
+        {
+            "name": "Aspect Of Dharma",
+            "options": ["Mindfullness", "Meditation", "Walking Meditation", "Breathing", "4 Nobel Truths", "8 Fold nobel path"]
+        },
+        {
+            "name": "Length of content",
+            "options": ["Long", "Medium", "Short"]
+        }
+    ]
+}

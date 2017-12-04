@@ -13,6 +13,7 @@ import {
   Navbar, 
   NavItem } from 'react-bootstrap';
 import SearchBar from './SearchBar';
+import FilterList from './filters/FilterList';
 
 class Main extends React.Component {
 
@@ -21,7 +22,7 @@ class Main extends React.Component {
       <Grid>
         <Row>
           <Col lg={4}><PageHeader>Zen Cloud</PageHeader></Col>
-          <Col lg={8}>
+          <Col lg={8} className="flex justify-content-center align-items-center">
             <SearchBar></SearchBar>
           </Col>
         </Row>
@@ -44,6 +45,7 @@ class Main extends React.Component {
 
         <Row>
           <Col lg={4}>
+            <FilterList ></FilterList>
             <div>
               <h4>Teachers</h4>
               <Form horizontal>
