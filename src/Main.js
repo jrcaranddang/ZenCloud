@@ -20,9 +20,9 @@ class Main extends React.Component {
   render() {
     return (
       <Grid>
-        <Row>
+        <Row style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <Col lg={4}><PageHeader>Zen Cloud</PageHeader></Col>
-          <Col lg={8} className="flex justify-content-center align-items-center">
+          <Col lg={8}>
             <SearchBar></SearchBar>
           </Col>
         </Row>
