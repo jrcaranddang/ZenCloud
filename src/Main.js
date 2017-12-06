@@ -3,17 +3,11 @@ import {
   PageHeader, 
   Grid, 
   Row, 
-  Col, 
-  Form, 
-  FormGroup, 
-  FormControl, 
-  Button, 
-  Checkbox, 
-  Nav, 
-  Navbar, 
-  NavItem } from 'react-bootstrap';
+  Col } from 'react-bootstrap';
 import SearchBar from './SearchBar';
 import FilterList from './filters/FilterList';
+import NavBar from './NavBar';
+import Video from './videos/Video';
 
 class Main extends React.Component {
 
@@ -21,67 +15,33 @@ class Main extends React.Component {
     return (
       <Grid>
         <Row style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <Col lg={4}><PageHeader>Zen Cloud</PageHeader></Col>
-          <Col lg={8}>
+          <Col lg={4}>
+            <PageHeader>Zen Cloud</PageHeader>
+          </Col>
+          <Col lg={6}>
             <SearchBar></SearchBar>
+          </Col>
+          <Col lg={2}>
+            <div>
+              <a href="#">log in </a>
+              |
+              <a href="#"> help</a>
+            </div>
           </Col>
         </Row>
 
         <Row>
           <Col lg={12}>
-            <Navbar>
-              <Navbar.Header>
-                <Navbar.Brand>
-                  <a href="#">React-Bootstrap</a>
-                </Navbar.Brand>
-              </Navbar.Header>
-              <Nav>
-                <NavItem eventKey={1} href="#">Link</NavItem>
-                <NavItem eventKey={2} href="#">Link</NavItem>
-              </Nav>
-            </Navbar>
+            <NavBar />
           </Col>
         </Row>
 
         <Row>
           <Col lg={4}>
-            <FilterList ></FilterList>
-            <div>
-              <h4>Teachers</h4>
-              <Form horizontal>
-                <FormGroup>
-                  <Col>
-                    <Checkbox>Remember me</Checkbox>
-                  </Col>
-                </FormGroup>
-
-                <FormGroup>
-                  <Col smOffset={2} sm={10}>
-                    <Button type="submit">
-                      Sign in
-                    </Button>
-                  </Col>
-                </FormGroup>
-              </Form>
-            </div>
+            <FilterList />
           </Col>
           <Col lg={8}>
-            <Row>
-              <Form inline>
-                <FormGroup>
-                  <FormControl componentClass="select" placeholder="select">
-                    <option value="select">Sort results by</option>
-                    <option value="other">...</option>
-                  </FormControl>
-                </FormGroup>
-              </Form>
-            </Row>
-            <Row>
-              <Col lg={4}>VIDEO</Col>
-              <Col lg={8}>DESCRIPTION</Col>
-              <Col lg={4}>VIDEO</Col>
-              <Col lg={8}>DESCRIPTION</Col>
-            </Row>
+            <Video />
           </Col>
         </Row>
       </Grid>
