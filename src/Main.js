@@ -1,20 +1,22 @@
 import React from 'react';
-import { 
-  PageHeader, 
-  Grid, 
-  Row, 
-  Col } from 'react-bootstrap';
+import {
+  PageHeader,
+  Grid,
+  Row,
+  Col,
+  Well } from 'react-bootstrap';
 import SearchBar from './SearchBar';
 import FilterList from './filters/FilterList';
 import NavBar from './NavBar';
-import Video from './videos/Video';
+// import Video from './videos/Video';
+import Pagination from './Pagination';
+import VideoList from './videos/VideoList';
 
 class Main extends React.Component {
-
   render() {
     return (
       <Grid>
-        <Row style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Col lg={4}>
             <PageHeader>Zen Cloud</PageHeader>
           </Col>
@@ -37,11 +39,15 @@ class Main extends React.Component {
         </Row>
 
         <Row>
-          <Col lg={4}>
-            <FilterList />
+          <Col lg={3}>
+            <Well>
+              <FilterList />
+            </Well>
           </Col>
-          <Col lg={8}>
-            <Video />
+          <Col lg={6}>
+            <Pagination />
+            <VideoList />
+            {/* <Video /> */}
           </Col>
         </Row>
       </Grid>

@@ -9,7 +9,7 @@ class SearchBar extends React.Component {
                     <FormControl type="text" placeholder="search" />
                     <Button type="submit">
                         <Glyphicon glyph="search" />
-                    </Button> 
+                    </Button>
                 </FormGroup>
                 {' '}
             </Form>

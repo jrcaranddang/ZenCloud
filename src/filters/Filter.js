@@ -6,7 +6,7 @@ import _ from 'lodash';
 class Filter extends React.Component {
     render() {
         let options = _.map(this.props.filter.options, (opt) => {
-            return <Checkbox key={ opt } >{ opt }</Checkbox>;
+            return <Checkbox key={ opt } >{ opt } inputRef={ref => { this.input = ref }}</Checkbox>;
         });
         return (
             <div>
